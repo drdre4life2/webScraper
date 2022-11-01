@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 ">
             <div class="card-body">
-                <h2 class="card-title">{{article.title}}</h2>
+                <h2 class="card-title"><a v-bind:href="article.title_link">{{article.title}}</a></h2>
                 <a v-bind:href="article.title_link" class="card-link"><p class="card-text">{{article.excerpt}}</p></a>
                 <div class="card-footer">
                     <small class="text-muted">{{article.date}}</small>
